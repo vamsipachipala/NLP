@@ -49,14 +49,6 @@ print(s.center(80, '-'))
 raw_annotations = open("/Users/vamsipachipala/Documents/NLP/NLP/train.txt").read()
 split_annotations = raw_annotations.split()
 
-# Amend class annotations to reflect Stanford's NERTagger
-# for n, i in enumerate(split_annotations):
-#     if i == "I-PER":
-#         split_annotations[n] = "PERSON"
-#     if i == "I-ORG":
-#         split_annotations[n] = "ORGANIZATION"
-#     if i == "I-LOC":
-#         split_annotations[n] = "LOCATION"
 
 # Group NE data into tuples
 def group(lst, n):
